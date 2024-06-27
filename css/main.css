@@ -38,6 +38,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
 }
 
+p{
+  font-size: var(--p_mobile);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -47,7 +51,60 @@ body {
   font-variation-settings: 
         "wdth" 100;
 }
-  
+
+.wrapper-general{
+  width: 100%;
+  background-color: var(--background);
+}
+
+.wrapper-logo-menu{
+  background-color: var(--black);
+  padding: 44px 0;
+}
+
+.wrapper-logo{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.wrapper-nav-menu{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav-menu ul{
+  display: flex;
+  gap: 60px;
+}
+
+.nav-menu a{
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-menu li{
+  list-style: none;
+}
+
+.wrapper-banner{
+  width: 100%;
+  position: relative;
+  background: var(--black);
+  overflow: hidden;
+}
+
+.banner-img{
+  width: 100%;
+  object-fit: cover;
+  height: 65vh;
+  object-position: center center;
+  opacity: 0.5;
+}
+
+
 /* 
 
 */
