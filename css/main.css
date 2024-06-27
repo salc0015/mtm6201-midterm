@@ -1,10 +1,47 @@
-h1, h2, h3, h4, h5, h6{
-    font-family: "Lato", sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-body{
+:root {
+
+  /* ----- COLORS ----- */
+  --white: #ffffff;
+  --black: #000000;
+  --orange: #d69e3d;
+  --dorange: #966f2c;
+  --background: #f3f0e9;
+
+  /* ----- MOBILE TYPESCALES -----  */
+  --h1_mobile: 2.027rem;
+  --h2_mobile: 1.802rem;
+  --h3_mobile: 1.424rem;
+  --p_mobile: 16px;
+
+  /* ----- TABLET TYPESCALES -----  */
+  --h1_tablet: 2.986rem;
+  --h2_tablet: 2.488rem;
+  --h3_tablet: 1.728rem;
+  --h1_tablet: 16px;
+
+/* ----- DESKTOP TYPESCALES -----  */
+  --h1_desktop: 3.815rem;
+  --h2_desktop: 3.052rem;
+  --h3_desktop: 1.953rem;
+  --p_desktop: 16px;
+
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
+}
+
+body {
   font-family: "Karla", sans-serif;
 }
+
 
 
   
