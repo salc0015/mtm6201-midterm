@@ -162,6 +162,8 @@ a{
   padding: 0 10px;
 }
 
+/* WELCOME */
+
 .wrapper-welcome{
   padding: 80px 0;
 }
@@ -201,6 +203,8 @@ a{
   width: 100%;
 }
 
+/* OFFER */
+
 .wrapper-offer{
   padding: 0 0 90px 0;
   display: flex;
@@ -230,6 +234,8 @@ a{
   padding: 20px 0 60px 0;
   max-width: 410px;
 }
+
+/* MENU AND LOCATIONS */
 
 .wrapper-menu-locations{
   position: relative;
@@ -308,7 +314,77 @@ a{
   padding: 10px 30px;
 }
 
-/* 
+/* TESTIMONIALS */
+
+.wrapper-testimonials{
+  background-color: var(--black);
+  padding: 80px 10px 60px 10px;
+}
+
+.wrapper-testimonials-header h2{
+  color: var(--white);
+  margin-bottom: 15px;
+}
+
+.wrapper-testimonials-person img{
+  width: 100%;
+  object-fit: cover;
+  height: 70vh;
+  opacity: .7;
+}
+
+.wrapper-testimonials-person{
+  position: relative;
+  width: 100%;
+  background: var(--black);
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.content-person{
+  color: var(--white);
+  margin-bottom: 15px;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  margin-top: -40px;
+  padding: 0 15px 55px 25px;
+}
+
+.t-white{
+  margin-bottom: 10px;
+}
+
+.wrapper-testimonials-jane img{
+  object-position: 50% 45%;
+}
+
+.wrapper-testimonials-scott img, .wrapper-testimonials-susie img{
+  object-position: 50% 0%;
+}
+
+footer{
+  background-color: var(--black);
+  color: var(--white);
+  padding-bottom: 50px;
+}
+
+.content-footer{ 
+  display: flex;
+  text-align: center;
+  padding: 10px;
+}
+
+.content-footer p{
+  font-weight: 500;
+  width: 100%;
+  padding-top: 15px;
+  border-top: rgb(68, 68, 68) 1px solid;
+}
+
+/*
 
 */
 
