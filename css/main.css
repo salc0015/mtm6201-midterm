@@ -151,7 +151,7 @@ a{
 
 .button-menu a{
   background-color: var(--white);
-  padding: 16px 30px;
+  padding: 16px 35px;
   text-decoration: none;
   font-size: 19px;
   color: var(--black);
@@ -228,6 +228,57 @@ a{
 .wrapper-offer-content p{
   padding: 20px 0 60px 0;
   max-width: 410px;
+}
+
+.wrapper-menu-locations{
+  position: relative;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+}
+
+.img-menu-lo{
+  width: 100%;
+  object-fit: cover;
+  height: 87vh;
+  object-position: 53%;
+  opacity: 0.4;
+}
+
+.wrapper-menu-locations-content{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--white);
+  margin-top: -40px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2cqmax;
+}
+
+.wrapper-menu-locations-content h2{
+  width: 470px;
+}
+
+.wrapper-menu .button-menu {
+  padding: 40px 0 110px 0;
+}
+
+.button-locations a{
+  color: var(--white);
+  padding: 15px 40px;
+  border: var(--white) 3px solid;
+  text-decoration: none;
+
+}
+
+.button-locations{
+  padding-top: 50px;
 }
 
 /* 
