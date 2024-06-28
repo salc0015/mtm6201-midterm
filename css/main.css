@@ -36,10 +36,12 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
+  text-transform: uppercase;
 }
 
 p{
   font-size: var(--p_mobile);
+  font-weight: 400;
 }
 
 body {
@@ -104,7 +106,146 @@ body {
   opacity: 0.5;
 }
 
+.wrapper-banner-text{
+  width: 100%;
+  color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  font-size: var(--h1_mobile);
+  max-width: 70%;
+  font-weight: 750;
+  line-height: 1.25;
+}
+
+h2{
+  font-size: var(--h2_mobile);
+  padding: 14px 0 35px 0;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+h3{
+  font-size: var(--h3_mobile);
+  font-weight: 700;
+}
+
+.wrapper-banner-text p{
+  padding: 30px 0 60px 0;
+  margin: 0 80px;
+}
+
+a{
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.button-menu a{
+  background-color: var(--white);
+  padding: 16px 30px;
+  text-decoration: none;
+  font-size: 19px;
+  color: var(--black);
+}
+
+.bleed-wrapper-general{
+  padding: 0 10px;
+}
+
+.wrapper-welcome{
+  padding: 80px 0;
+}
+
+.yellow{
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--orange);
+}
+
+.wrapper-welcome-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-welcome-content h2{
+  width: 380px;
+}
+
+.grid-1{
+  display: grid;
+  gap: 20px;
+}
+
+.grid-pair{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.img-latte{
+  width: 100%;
+}
+
+.grid-pair img {
+  width: 100%;
+}
+
+.wrapper-offer{
+  padding: 0 0 90px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.wrapper-offer-header h2{
+  padding-bottom: 60px;
+}
+
+.wrapper-offer-content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper-offer-content img{
+  max-width: 30%;
+  padding-bottom: 30px;
+}
+
+.wrapper-offer-content p{
+  padding: 20px 0 60px 0;
+  max-width: 410px;
+}
 
 /* 
 
 */
+
+@media screen and (min-width:768px) {
+  .wrapper-general{
+    max-width: 1200px;
+    margin: auto;
+    background-color: red;
+  }
+}
+
+@media screen and (min-width:1100px) {
+  .wrapper-general{
+    max-width: 1200px;
+    margin: auto;
+    background-color: blue;
+  }
+}
