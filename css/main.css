@@ -23,7 +23,7 @@
   --h1_tablet: 2.986rem;
   --h2_tablet: 2.488rem;
   --h3_tablet: 1.728rem;
-  --h1_tablet: 16px;
+  --p_tablet: 16px;
 
 /* ----- DESKTOP TYPESCALES -----  */
   --h1_desktop: 3.815rem;
@@ -68,7 +68,7 @@ body {
 .wrapper-logo{
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 
 .wrapper-nav-menu{
@@ -116,21 +116,18 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  z-index: 1;
 }
 
 h1{
   font-size: var(--h1_mobile);
-  max-width: 70%;
   font-weight: 750;
   line-height: 1.25;
 }
 
 h2{
   font-size: var(--h2_mobile);
-  padding: 14px 0 35px 0;
+  padding: 8px 0 35px 0;
   font-weight: 700;
   line-height: 1.15;
 }
@@ -140,9 +137,13 @@ h3{
   font-weight: 700;
 }
 
+.wrapper-banner-text h1{
+  margin: 0 110px;
+}
+
 .wrapper-banner-text p{
-  padding: 30px 0 60px 0;
-  margin: 0 80px;
+  padding: 25px 0 60px 0;
+  margin: 0 110px;
 }
 
 a{
@@ -170,18 +171,13 @@ a{
 
 .yellow{
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   font-weight: 500;
   color: var(--orange);
 }
 
-.wrapper-welcome-content{
-  display: flex;
-  flex-direction: column;
-}
-
 .wrapper-welcome-content h2{
-  width: 380px;
+  margin-right: 300px;
 }
 
 .grid-1{
@@ -206,7 +202,7 @@ a{
 /* OFFER */
 
 .wrapper-offer{
-  padding: 0 0 90px 0;
+  padding: 30px 0 90px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -214,15 +210,12 @@ a{
   width: 100%;
 }
 
-.wrapper-offer-header h2{
-  padding-bottom: 60px;
+.wrapper-offer div{
+  width: 100%;
 }
 
-.wrapper-offer-content{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.wrapper-offer-header h2{
+  padding-bottom: 60px;
 }
 
 .wrapper-offer-content img{
@@ -232,7 +225,7 @@ a{
 
 .wrapper-offer-content p{
   padding: 20px 0 60px 0;
-  max-width: 410px;
+  margin: 0 130px;
 }
 
 /* MENU AND LOCATIONS */
@@ -253,23 +246,13 @@ a{
 }
 
 .wrapper-menu-locations-content{
-  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: var(--white);
-  margin-top: -40px;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 2cqmax;
-}
-
-.wrapper-menu-locations-content h2{
-  width: 470px;
 }
 
 .wrapper-menu .button-menu {
@@ -384,17 +367,142 @@ footer{
   border-top: rgb(68, 68, 68) 1px solid;
 }
 
-/*
-
-*/
-
 @media screen and (min-width:768px) {
   .wrapper-general{
     max-width: 1200px;
     margin: auto;
     background-color: red;
   }
+
+  h1{
+    font-size: var(--h1_tablet);
+  }
+  
+  h2{
+    font-size: var(--h2_tablet);
+  }
+  
+  h3{
+    font-size: var(--h3_tablet);
+  }
+
+  .banner-img{
+    height: 72vh;
+    object-position: 50% 45%;
+  }
+
+  .wrapper-banner-text h1{
+    padding: 0 24px;
+  }
+
+  .wrapper-banner-text p{
+    margin: 0 110px;
+  }
+  
+  /* WELCOME */
+
+  .wrapper-welcome h2{
+    width: 530px;
+  }
+
+  .grid-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .img-latte{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    width: 100%;
+  }
+
+  /* .grid-pair{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  } */
+
+  .grid-pair img{
+    width: 100%;
+  }
+
+
+  /* OFFER */
+
+  .wrapper-offer-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    width: 100%;
+  }
+
+  .wrapper-offer-trade, .wrapper-offer-baked{
+    width: 100%;
+  }
+
+  .wrapper-offer-trade p, .wrapper-offer-baked p{
+    margin: 0 30px;
+  }
+
+  .wrapper-offer-made p{
+    padding: 0 140px;
+  }
+
+  .wrapper-offer-made{
+    grid-column: 1 / 3;
+    width: 50%;
+  }
+
+  .wrapper-offer img{
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+  }
+ 
+  /* MENU AND LOCATIONS */
+
+  .wrapper-menu-locations-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .wrapper-menu h2, .wrapper-locations h2 {
+    padding: 20px 45px 80px 45px;
+    margin: 0;
+  }
+
+  /* ABOUT US */
+
+  .wrapper-about-us{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 50px;
+  }
+
+  .about-content{
+    margin-top: 20px;
+    padding-right: 5px;
+  }
+
+  /* TESTIMONIALS */
+
+  .wrapper-testimonials-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 30px;
+  }
+  
+  .wrapper-testimonials-header h2{
+    width: 550px;
+  }
+
 }
+
 
 @media screen and (min-width:1100px) {
   .wrapper-general{
