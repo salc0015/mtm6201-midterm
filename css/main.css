@@ -55,6 +55,16 @@ body {
         "wdth" 100;
 }
 
+.skip-link{
+  position: absolute;
+  top: -40px; 
+  left: 0;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 8px;
+  text-decoration: none;
+}
+
 .wrapper-general{
   max-width: 1200px;
   background-color: var(--background);
