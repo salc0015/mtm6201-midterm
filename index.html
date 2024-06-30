@@ -13,17 +13,22 @@
 <body>
 
     <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#menu" class="skip-link">Skip menu</a>
+    <a href="#locations" class="skip-link">Skip to locations</a>
+    <a href="#about-us" class="skip-link">Skip to about us</a>
+    <a href="#testimonials" class="skip-link">Skip to testimonials</a>
+
     <div class="wrapper-general">
 
         <!--  LOGO AND MENU  -->
-        <div class="wrapper-logo-menu">
+        <header class="wrapper-logo-menu" role="banner">
             
             <div class="wrapper-logo">
                 <img src="/images/my-coffee-shop-logo.svg" alt="[image of coffe grains] My Coffe House Logo">
             </div>
 
             <div class="wrapper-nav-menu">
-                <nav class="nav-menu">
+                <nav class="nav-menu" role="navigation" aria-label="Main Navigation">
                     <ul>
                         <li><a href="#about-us">ABOUT US</a></li>
                         <li><a href="#menu">MENU</a></li>
@@ -31,154 +36,158 @@
                     </ul>
                 </nav>
             </div>
-        </div>
+        </header>
 
-        <!-- BANNER -->
-        <div id="main-content" class="wrapper-banner">
-            <img class="banner-img" src="/images/hero-background.jpg" alt="[Image of a woman in a cafe, adding something to her drink.] She is wearing a yellow hat, a grey blouse, and glasses.">
+        <main id="main-content" role="main">
 
-            <div class="wrapper-banner-text">
-                <h1>Experience coffee like never before</h1>
-                <p class="white">We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
+            <!-- BANNER -->
+            <section class="wrapper-banner" role="region" aria-labelledby="banner-heading">
+                <img class="banner-img" src="/images/hero-background.jpg" alt="[Image of a woman in a cafe, adding something to her drink.] She is wearing a yellow hat, a grey blouse, and glasses.">
 
-                <div class="button-menu">
-                    <a href="#">Explore our Menu</a>
-                </div>
+                <div class="wrapper-banner-text">
+                    <h1 id="banner-heading">Experience coffee like never before</h1>
+                    <p class="white">We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
 
-            </div>
-        </div>
-
-        <div class="bleed-wrapper-general">
-
-            <!-- WELCOME -->
-            <div class="wrapper-welcome">
-                <div class="wrapper-welcome-content">
-                    <p class="yellow">Welcome to My Coffee House</p>
-                    <h2>Experience a New Way to Taste Coffe</h2>
-                </div>
-
-                <div class="grid-1">
-                    <img class="img-latte" src="/images/latte.jpeg" alt="Image of a cup of coffee being decorated with a milk figure">
-                    <div class="grid-pair">
-                        <img class="img-beans" src="/images/coffee-beans.jpeg" alt="image of coffee beans in a glass bowl">
-                        <img class="img-pouring" src="/images/pouring-coffee.jpeg" alt="image of coffee being served into a glass cup">
-                    </div>
-                    <div class="grid-pair">
-                        <img class="img-cups" src="/images/three-cups.jpeg" alt="Image of three cups of coffee, two of them have a milk figure and the other is iced coffee">
-                        <img class="img-smiling" src="/images/smiling-employee.jpeg" alt="[Image of a smiling cafeteria employee] She is wearing a yellow hat, a grey blouse, and glasses.">
-                    </div>
-                </div>
-            </div>
-
-                <!-- OFFER -->
-            <div class="wrapper-offer">
-                <div class="wrapper-offer-header">
-                    <p class="yellow">What We Offer</p>
-                    <h2>Why visit us?</h2>
-                </div>
-
-                <div class="wrapper-offer-content">
-                    
-                    <div class="wrapper-offer-trade">
-                        <img src="/images/fair-trade.svg" alt="Logo representing fair trade">
-                        <h3>Fair Trade Coffe</h3>
-                        <p class="white">We build direct relationships with the farmers and producers who help in the development of delicious, sustainable and organic coffee.</p>
-                    </div>
-                    <div class="wrapper-offer-baked">
-                        <img src="/images/local-baked-goods.svg" alt="">
-                        <h3>Local baked goods</h3>
-                        <p class="white">We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
-                    </div>
-                    <div class="wrapper-offer-made">
-                        <img src="/images/made-with-love.svg" alt="">
-                        <h3>Made with love</h3>
-                        <p class="white">We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day of right.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div> <!-- BLEED WRAPPER GENERAL END -->
-
-        <!-- MEMU AND LOCATIONS -->
-        <div class="wrapper-menu-locations">
-            <img class="img-menu-lo " src="/images/coffee-shop.jpeg" alt="Image of a coffee shop, taken from above showing a variety of products, as well as two people, one of them is an employee and the other is a customer.">
-            <div class="wrapper-menu-locations-content">
-                <div id="menu" class="wrapper-menu">
-                    <p class="yellow">Our Menu</p>
-                    <h2>Explore what we have to offer you</h2>
-                    <div class="button-m-l button-menu">
+                    <div class="button-menu">
                         <a href="#">Explore our Menu</a>
                     </div>
+
                 </div>
-                <div id="locations" class="wrapper-locations">
-                    <p class="yellow">Locations</p>
-                    <h2>Find your nearest coffee shop</h2>
-                    <div class="button-m-l button-locations">
-                        <a href="#">View Locations</a>
+            </section>
+
+            <div class="bleed-wrapper-general">
+
+                <!-- WELCOME -->
+                <section class="wrapper-welcome" role="region" aria-labelledby="welcome-heading">
+                    <div class="wrapper-welcome-content">
+                        <p class="yellow">Welcome to My Coffee House</p>
+                        <h2 id="welcome-heading">Experience a New Way to Taste Coffe</h2>
+                    </div>
+
+                    <div class="grid-1">
+                        <img class="img-latte" src="/images/latte.jpeg" alt="Image of a cup of coffee being decorated with a milk figure">
+                        <div class="grid-pair">
+                            <img class="img-beans" src="/images/coffee-beans.jpeg" alt="image of coffee beans in a glass bowl">
+                            <img class="img-pouring" src="/images/pouring-coffee.jpeg" alt="image of coffee being served into a glass cup">
+                        </div>
+                        <div class="grid-pair">
+                            <img class="img-cups" src="/images/three-cups.jpeg" alt="Image of three cups of coffee, two of them have a milk figure and the other is iced coffee">
+                            <img class="img-smiling" src="/images/smiling-employee.jpeg" alt="[Image of a smiling cafeteria employee] She is wearing a yellow hat, a grey blouse, and glasses.">
+                        </div>
+                    </div>
+                </section>
+
+                    <!-- OFFER -->
+                <section class="wrapper-offer" role="region" aria-labelledby="offer-heading">
+                    <div class="wrapper-offer-header">
+                        <p class="yellow">What We Offer</p>
+                        <h2 id="offer-heading">Why visit us?</h2>
+                    </div>
+
+                    <div class="wrapper-offer-content">
+                        
+                        <div class="wrapper-offer-trade">
+                            <img src="/images/fair-trade.svg" alt="Logo representing fair trade">
+                            <h3>Fair Trade Coffe</h3>
+                            <p class="white">We build direct relationships with the farmers and producers who help in the development of delicious, sustainable and organic coffee.</p>
+                        </div>
+                        <div class="wrapper-offer-baked">
+                            <img src="/images/local-baked-goods.svg" alt="">
+                            <h3>Local baked goods</h3>
+                            <p class="white">We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
+                        </div>
+                        <div class="wrapper-offer-made">
+                            <img src="/images/made-with-love.svg" alt="">
+                            <h3>Made with love</h3>
+                            <p class="white">We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day of right.</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div> <!-- BLEED WRAPPER GENERAL END -->
+
+            <!-- MEMU AND LOCATIONS -->
+            <section class="wrapper-menu-locations" role="region" aria-labelledby="menu-locations-heading">
+                <img class="img-menu-lo " src="/images/coffee-shop.jpeg" alt="Image of a coffee shop, taken from above showing a variety of products, as well as two people, one of them is an employee and the other is a customer.">
+                <div class="wrapper-menu-locations-content">
+                    <div id="menu" class="wrapper-menu">
+                        <p class="yellow">Our Menu</p>
+                        <h2 id="menu-locations-heading">Explore what we have to offer you</h2>
+                        <div class="button-m-l button-menu">
+                            <a href="#">Explore our Menu</a>
+                        </div>
+                    </div>
+                    <div id="locations" class="wrapper-locations">
+                        <p class="yellow">Locations</p>
+                        <h2>Find your nearest coffee shop</h2>
+                        <div class="button-m-l button-locations">
+                            <a href="#">View Locations</a>
+                        </div>
                     </div>
                 </div>
+            </section>
+
+            <div class="bleed-wrapper-general">
+
+                <!-- ABOUT US -->
+                <section id="about-us" class="wrapper-about-us" role="region" aria-labelledby="about-us-heading">
+                    <div class="img-about">
+                        <img src="/images/about-us.jpeg" alt="Image of two employees, the first one is leaning towards a coffee machine holding a glass, the second one observes the action from behind.">
+                    </div>
+                    <div class="about-content">
+                        <p class="yellow">About Us</p>
+                        <h2 id="about-us-heading">Read Our Story</h2>
+                        <p class="white">In the heart of our community, My Coffee House emerged as a humble local coffee shop that sought to redefine the coffee experience. Founded with a passion for quality brews and a commitment to fostering genuine connections, we embarked on this journey with a vision to create a warm and inviting space for coffee enthusiasts and casual patrons alike</p>
+                        <br>
+                        <p class="white">My Coffee House quickly became a cherished gathering spot, where the rich aroma of freshly ground coffee beans mingled with the laughter of friends and the tapping of keyboards from those seeking a cozy workspace.</p>
+
+                        <div class="button-learn">
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </section>
+
             </div>
-        </div>
 
-        <div class="bleed-wrapper-general">
+            <!-- TESTIMONIALS -->
+            <section id="testimonials" class="wrapper-testimonials" role="region" aria-labelledby="testimonials-heading">
 
-            <!-- ABOUT US -->
-             <div id="about-us" class="wrapper-about-us">
-                <div class="img-about">
-                    <img src="/images/about-us.jpeg" alt="Image of two employees, the first one is leaning towards a coffee machine holding a glass, the second one observes the action from behind.">
+                <div class="wrapper-testimonials-header">
+                    <p class="yellow">Testimonials</p>
+                    <h2 id="testimonials-heading">What our customers say about us</h2>
                 </div>
-                <div class="about-content">
-                    <p class="yellow">About Us</p>
-                    <h2>Read Our Story</h2>
-                    <p class="white">In the heart of our community, My Coffee House emerged as a humble local coffee shop that sought to redefine the coffee experience. Founded with a passion for quality brews and a commitment to fostering genuine connections, we embarked on this journey with a vision to create a warm and inviting space for coffee enthusiasts and casual patrons alike</p>
-                    <br>
-                    <p class="white">My Coffee House quickly became a cherished gathering spot, where the rich aroma of freshly ground coffee beans mingled with the laughter of friends and the tapping of keyboards from those seeking a cozy workspace.</p>
+                
+                <div class="wrapper-testimonials-content">
 
-                    <div class="button-learn">
-                        <a href="#">Learn More</a>
+                    <div class="wrapper-testimonials-person wrapper-testimonials-jane">
+                        <img src="/images/testimonial-1.jpeg" alt="Image of a woman [Jane] drinking a beverage from a cup, wearing a black sweatshirt">
+                        <div class="content-person content-jane">
+                            <p class="t-white">"I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."</p>
+                            <p class="yellow">Jane D., Toronto</p>
+                        </div>
+                    </div>
+
+                    <div class="wrapper-testimonials-person wrapper-testimonials-scott">
+                        <img src="/images/testimonial-2.jpeg" alt="Image of a man [Scott] sitting in front of a laptop and a drink in a plastic cup, wearing a black t-shirt and a plaid shirt">
+                        <div class="content-person content-scott">
+                            <p class="t-white">"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</p>
+                            <p class="yellow">Scott S., Ottawa</p>
+                        </div>
+                    </div>
+
+                    <div class="wrapper-testimonials-person  wrapper-testimonials-susie">
+                        <img src="/images/testimonial-3.jpeg" alt="Image of a woman [Susie] sitting in front of a laptop and drinking a beverage from a plastic cup, wearing a mustard yellow sweatshirt,">
+                        <div class="content-person content-susie">
+                            <p class="t-white">"Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."</p>
+                            <p class="yellow">Susie F., Ottawa</p>
+                        </div>
                     </div>
                 </div>
-             </div>
+            </section>
+    
+        </main>
 
-        </div>
-
-        <!-- TESTIMONIALS -->
-        <div class="wrapper-testimonials">
-
-            <div class="wrapper-testimonials-header">
-                <p class="yellow">Testimonials</p>
-                <h2>What our customers say about us</h2>
-            </div>
-            
-            <div class="wrapper-testimonials-content">
-
-                <div class="wrapper-testimonials-person wrapper-testimonials-jane">
-                    <img src="/images/testimonial-1.jpeg" alt="Image of a woman [Jane] drinking a beverage from a cup, wearing a black sweatshirt">
-                    <div class="content-person content-jane">
-                        <p class="t-white">"I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."</p>
-                        <p class="yellow">Jane D., Toronto</p>
-                    </div>
-                </div>
-
-                <div class="wrapper-testimonials-person wrapper-testimonials-scott">
-                    <img src="/images/testimonial-2.jpeg" alt="Image of a man [Scott] sitting in front of a laptop and a drink in a plastic cup, wearing a black t-shirt and a plaid shirt">
-                    <div class="content-person content-scott">
-                        <p class="t-white">"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</p>
-                        <p class="yellow">Scott S., Ottawa</p>
-                    </div>
-                </div>
-
-                <div class="wrapper-testimonials-person  wrapper-testimonials-susie">
-                    <img src="/images/testimonial-3.jpeg" alt="Image of a woman [Susie] sitting in front of a laptop and drinking a beverage from a plastic cup, wearing a mustard yellow sweatshirt,">
-                    <div class="content-person content-susie">
-                        <p class="t-white">"Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."</p>
-                        <p class="yellow">Susie F., Ottawa</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <footer>
+        <footer role="contentinfo">
             <div class="content-footer">
                 <p>&copy; My Coffe Company 2024</p>
             </div>

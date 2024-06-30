@@ -63,7 +63,15 @@ body {
   color: var(--white);
   padding: 8px;
   text-decoration: none;
+  z-index: 100;
 }
+
+.skip-link:focus{
+  top: 0;
+  position: absolute;
+  z-index: 100;
+}
+
 
 .wrapper-general{
   max-width: 1200px;
