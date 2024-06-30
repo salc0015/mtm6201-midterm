@@ -56,7 +56,7 @@ body {
 }
 
 .wrapper-general{
-  width: 100%;
+  max-width: 1200px;
   background-color: var(--background);
 }
 
@@ -219,7 +219,7 @@ a{
 }
 
 .wrapper-offer-content img{
-  max-width: 30%;
+  width: 200px;
   padding-bottom: 30px;
 }
 
@@ -369,9 +369,7 @@ footer{
 
 @media screen and (min-width:768px) {
   .wrapper-general{
-    max-width: 1200px;
     margin: auto;
-    background-color: red;
   }
 
   h1{
@@ -417,12 +415,6 @@ footer{
     width: 100%;
   }
 
-  /* .grid-pair{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  } */
-
   .grid-pair img{
     width: 100%;
   }
@@ -457,7 +449,7 @@ footer{
   .wrapper-offer img{
     width: 100%;
     height: auto;
-    max-width: 150px;
+    width: 150px;
   }
  
   /* MENU AND LOCATIONS */
@@ -506,8 +498,110 @@ footer{
 
 @media screen and (min-width:1100px) {
   .wrapper-general{
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: auto;
-    background-color: blue;
   }
+
+  h1{
+    font-size: var(--h1_desktop);
+  }
+  
+  h2{
+    font-size: var(--h2_desktop);
+  }
+  
+  h3{
+    font-size: var(--h3_desktop);
+  }
+
+  .wrapper-logo-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+  }
+
+  .wrapper-logo{
+    margin: 0;
+  }
+
+  .nav-menu ul{
+    gap: 45px;
+  }
+
+  /* BANNER */
+
+  .wrapper-banner-text h1{
+    margin: 0 170px;
+  }
+
+  .wrapper-banner-text p{
+    margin: 0 230px;
+  }
+
+  /* WELCOME */
+
+  .wrapper-welcome{
+    margin: 0 53px;
+  }
+
+  /* OFFER */
+
+  .wrapper-offer{
+    padding: 0 53px;
+    margin-bottom: 80px;
+  }
+
+  .wrapper-offer-content{
+    display: flex;
+  }
+
+  .wrapper-offer-trade p, .wrapper-offer-baked p, .wrapper-offer-made p{
+    margin: 0;
+    padding: 15px 15px 0 15px;
+  }
+
+  /* MENU AND LOCATIONS */
+
+  .wrapper-menu-locations-content{
+    padding: 0 53px;
+    margin-top: 45px;
+  }
+
+  .img-menu-lo{
+    height: 50vh;
+  }
+
+  .wrapper-menu h2, .wrapper-locations h2 {
+    padding: 20px 0 40px 0;
+    margin: 0;
+  }
+
+  /* ABOUT US */
+
+  .wrapper-about-us{
+    padding: 0 53px 70px 53px;
+  }
+
+  .about-content{
+    padding-top: 100px;
+  }
+
+  .button-learn{
+    padding-top: 15px;
+  }
+
+  /* TESTIMONIALS */
+
+  .wrapper-testimonials{
+    padding: 50px 53px 0 53px;
+  }
+
+  .wrapper-testimonials-header h2{
+    width: 650px;
+  }
+
+
+ 
+
 }
