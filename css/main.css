@@ -30,8 +30,11 @@
   --h2_desktop: 3.052rem;
   --h3_desktop: 1.953rem;
   --p_desktop: 16px;
+}
 
-
+.wrapper-max{
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -109,6 +112,26 @@ body {
   list-style: none;
 }
 
+h1{
+  font-size: var(--h1_mobile);
+  font-weight: 750;
+  line-height: 1.25;
+}
+
+h2{
+  font-size: var(--h2_mobile);
+  padding: 8px 0 35px 0;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+h3{
+  font-size: var(--h3_mobile);
+  font-weight: 700;
+}
+
+/* BANNER */
+
 .wrapper-banner{
   width: 100%;
   position: relative;
@@ -134,24 +157,6 @@ body {
   text-align: center;
   padding: 0 20px;
   z-index: 1;
-}
-
-h1{
-  font-size: var(--h1_mobile);
-  font-weight: 750;
-  line-height: 1.25;
-}
-
-h2{
-  font-size: var(--h2_mobile);
-  padding: 8px 0 35px 0;
-  font-weight: 700;
-  line-height: 1.15;
-}
-
-h3{
-  font-size: var(--h3_mobile);
-  font-weight: 700;
 }
 
 .wrapper-banner-text h1{
