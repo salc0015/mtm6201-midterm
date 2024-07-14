@@ -251,7 +251,6 @@ a{
   position: relative;
   width: 100%;
   background: black;
-  overflow: hidden;
 }
 
 .img-menu-lo{
@@ -263,29 +262,30 @@ a{
 }
 
 .wrapper-menu-locations-content{
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: var(--white);
-  z-index: 1;
+  padding-top: 20px;
 }
 
-.wrapper-menu .button-menu {
-  padding: 40px 0 110px 0;
+.wrapper-ml{
+  padding: 40px 50px 80px 40px;
 }
 
 .button-locations a{
   color: var(--white);
-  padding: 15px 40px;
+  padding: 16px 35px;
   border: var(--white) 3px solid;
   text-decoration: none;
 
 }
 
-.button-locations{
-  padding-top: 50px;
+.button-m-l{
+  padding-top: 45px;
 }
 
 /* ABOUT US */
@@ -324,6 +324,7 @@ a{
 .wrapper-testimonials-header h2{
   color: var(--white);
   margin-bottom: 15px;
+  padding-right: 20%;
 }
 
 .wrapper-testimonials-person img{
@@ -337,7 +338,6 @@ a{
   position: relative;
   width: 100%;
   background: var(--black);
-  overflow: hidden;
   margin-bottom: 15px;
 }
 
