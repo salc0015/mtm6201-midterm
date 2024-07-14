@@ -108,6 +108,23 @@ body {
   font-weight: 600;
 }
 
+.nav-menu ul li {
+  opacity: 0;
+  animation: slide 1s ease-in-out forwards;
+}
+
+.nav-menu ul li:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.nav-menu ul li:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.nav-menu ul li:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
 .nav-menu li{
   list-style: none;
 }
@@ -157,6 +174,7 @@ h3{
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fade 2s ease-in-out;
 }
 
 .wrapper-banner-text h1{
@@ -181,12 +199,14 @@ a{
   font-size: 19px;
   color: var(--black);
   border: 3px solid transparent;
+  display: inline-block;
 }
 
 .button-menu a:hover, .button-menu a:focus{
   background-color: var(--orange);
   color: var(--white);
   border-color: var(--white);
+  animation: bounce 1s;
 }
 
 .bleed-wrapper-general{
@@ -225,6 +245,12 @@ a{
   width: 100%;
 }
 
+.wrapper-welcome{
+  opacity: 0;
+  animation: fade3 2s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
 /* OFFER */
 
 .wrapper-offer{
@@ -251,6 +277,12 @@ a{
 
 .wrapper-offer-content p{
   padding: 20px 50px 60px 50px;
+}
+
+.wrapper-offer {
+  opacity: 0;
+  animation: fade3 2s ease-in-out forwards;
+  animation-delay: 1s;
 }
 
 /* MENU AND LOCATIONS */
@@ -289,6 +321,7 @@ a{
   padding: 16px 35px;
   border: var(--white) 3px solid;
   text-decoration: none;
+  display: inline-block;
 }
 
 .button-m-l{
@@ -299,6 +332,13 @@ a{
   background-color: var(--orange);
   color: var(--white);
   border-color: var(--white);
+  animation: bounce 1s;
+}
+
+.wrapper-ml{
+  opacity: 0;
+  animation: fade3 2s ease-in-out forwards;
+  animation-delay: 1s;
 }
 
 /* ABOUT US */
@@ -325,12 +365,20 @@ a{
   background-color: var(--black);
   color: var(--white);
   padding: 10px 30px;
+  display: inline-block;
 }
 
 .button-learn a:hover, .button-learn a:focus{
   background-color: var(--orange);
   color: var(--white);
   border-color: var(--white);
+  animation: bounce 1s;
+}
+
+.about-content{
+  opacity: 0;
+  animation: fade3 2s ease-in-out forwards;
+  animation-delay: 1s;
 }
 
 /* TESTIMONIALS */
@@ -382,6 +430,20 @@ a{
 
 .wrapper-testimonials-scott img, .wrapper-testimonials-susie img{
   object-position: 50% 0%;
+}
+
+.wrapper-testimonials-content .wrapper-testimonials-person {
+  opacity: 0;
+  animation: fade2 1.5s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+.wrapper-testimonials-content .wrapper-testimonials-person:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.wrapper-testimonials-content .wrapper-testimonials-person:nth-child(3) {
+  animation-delay: 1.5s;
 }
 
 footer{
@@ -630,5 +692,60 @@ footer{
 
   .wrapper-testimonials{
     padding-top: 110px;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+@keyframes fade2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes fade3 {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
