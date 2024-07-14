@@ -466,14 +466,17 @@ footer{
     gap: 10px;
   }
 
-  .wrapper-menu h2, .wrapper-locations h2 {
-    padding: 20px 45px 80px 45px;
-    margin: 0;
+  .wrapper-ml{
+    padding: 10px 40px 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-  /* .button-m-l a{
-    display: inline-block;
-  } */
+  .button-m-l{
+    padding: 0;
+    margin-top: 70px;
+  }
 
   /* ABOUT US */
 
