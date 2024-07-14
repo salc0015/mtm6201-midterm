@@ -171,6 +171,7 @@ h3{
 a{
   text-transform: uppercase;
   font-weight: 900;
+  transition: all 0.3s ease;
 }
 
 .button-menu a{
@@ -179,6 +180,13 @@ a{
   text-decoration: none;
   font-size: 19px;
   color: var(--black);
+  border: 3px solid transparent;
+}
+
+.button-menu a:hover, .button-menu a:focus{
+  background-color: var(--orange);
+  color: var(--white);
+  border-color: var(--white);
 }
 
 .bleed-wrapper-general{
@@ -281,11 +289,16 @@ a{
   padding: 16px 35px;
   border: var(--white) 3px solid;
   text-decoration: none;
-
 }
 
 .button-m-l{
   padding-top: 45px;
+}
+
+.button-locations a:hover, .button-locations a:focus{
+  background-color: var(--orange);
+  color: var(--white);
+  border-color: var(--white);
 }
 
 /* ABOUT US */
@@ -312,6 +325,12 @@ a{
   background-color: var(--black);
   color: var(--white);
   padding: 10px 30px;
+}
+
+.button-learn a:hover, .button-learn a:focus{
+  background-color: var(--orange);
+  color: var(--white);
+  border-color: var(--white);
 }
 
 /* TESTIMONIALS */
