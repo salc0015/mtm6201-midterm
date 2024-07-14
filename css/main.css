@@ -588,32 +588,20 @@ footer{
 
   /* MENU AND LOCATIONS */
 
-  .wrapper-menu-locations-content{
-    padding: 0 53px;
-    margin-top: 45px;
-  }
-
   .img-menu-lo{
-    height: 50vh;
+    height: 70vh;
   }
 
-  .wrapper-menu h2, .wrapper-locations h2 {
-    padding: 20px 0 40px 0;
-    margin: 0;
-    /* white-space: nowrap; */
+  .wrapper-menu-locations-content {
+    max-width: 1200px;
   }
 
-
+  .wrapper-ml{
+    flex: 1;
+    padding: 10px 20px;
+  }
 
   /* ABOUT US */
-
-  .wrapper-about-us{
-    padding: 0 53px 70px 53px;
-  }
-
-  .about-content{
-    padding-top: 100px;
-  }
 
   .button-learn{
     padding-top: 15px;
@@ -622,14 +610,6 @@ footer{
   /* TESTIMONIALS */
 
   .wrapper-testimonials{
-    padding: 50px 53px 0 53px;
+    padding-top: 110px;
   }
-
-  .wrapper-testimonials-header h2{
-    width: 650px;
-  }
-
-
- 
-
 }
