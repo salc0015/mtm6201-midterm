@@ -213,7 +213,7 @@ a{
   gap: 20px;
 }
 
-.grid-pair img {
+.grid-1 img {
   width: 100%;
 }
 
@@ -237,7 +237,7 @@ a{
 }
 
 .wrapper-offer-content img{
-  width: 200px;
+  width: 35%;
   padding-bottom: 30px;
 }
 
