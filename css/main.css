@@ -443,35 +443,18 @@ footer{
   .wrapper-offer-content{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
+    gap: 20px;
+  }
+
+  .wrapper-offer-item{
     width: 100%;
   }
 
-  .wrapper-offer-trade, .wrapper-offer-baked{
-    width: 100%;
-  }
-
-  .wrapper-offer-trade p, .wrapper-offer-baked p{
-    margin: 0 30px;
-  }
-
-  .wrapper-offer-made p{
-    padding: 0 140px;
-  }
-
-  .wrapper-offer-made{
-    grid-column: 1 / 3;
-    
-  }
-
-  .wrapper-offer img{
-    width: 100%;
-    height: auto;
-    width: 150px;
-  }
-
-  .wrapper-offer-made p{
-    padding-top: 20px;
+  .wrapper-offer-item.full-width{
+    grid-column: span 2;
+    justify-self: center;
+    width: 50%;
+    margin-top: 20px;
   }
  
   /* MENU AND LOCATIONS */
