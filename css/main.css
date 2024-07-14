@@ -546,12 +546,16 @@ footer{
 
   /* BANNER */
 
+  .banner-img{
+    object-position: 50% 40%;
+  }
+
   .wrapper-banner-text h1{
-    margin: 0 170px;
+    max-width: 60%;
   }
 
   .wrapper-banner-text p{
-    margin: 0 230px;
+    max-width: 50%;
   }
 
   /* WELCOME */
