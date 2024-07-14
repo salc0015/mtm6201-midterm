@@ -401,17 +401,18 @@ footer{
     font-size: var(--h3_tablet);
   }
 
+  /* BANNER */
+
   .banner-img{
-    height: 72vh;
     object-position: 50% 45%;
   }
 
   .wrapper-banner-text h1{
-    padding: 0 24px;
+    max-width: 70%;
   }
 
   .wrapper-banner-text p{
-    margin: 0 110px;
+    max-width: 60%;
   }
   
   /* WELCOME */
